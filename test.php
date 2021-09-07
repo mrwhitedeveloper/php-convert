@@ -11,7 +11,7 @@
    } else {
       echo "Opened database successfully\n";
    }
-
+echo "before query \n";
    $sql =<<<EOF
       SELECT * from COMPANY;
 EOF;
