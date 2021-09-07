@@ -5,6 +5,7 @@
       */
 require_once('flatdb.php');
 $db = new FlatDB(__DIR__ . '/data');
+print_r($db);
 
 // If table 'products' is not exist, it will be created on the fly
 // The insert function returns the inserted object, note that it added an 'id' key
