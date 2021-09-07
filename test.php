@@ -1,4 +1,5 @@
 <?php
+echo "before query \n";
    class MyDB extends SQLite3 {
       function __construct() {
          $this->open('test.db');
@@ -11,7 +12,7 @@
    } else {
       echo "Opened database successfully\n";
    }
-echo "before query \n";
+
    $sql =<<<EOF
       SELECT * from COMPANY;
 EOF;
